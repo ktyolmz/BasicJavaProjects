@@ -49,12 +49,13 @@ public class RockPaperScissors {
 				|| userMove.equalsIgnoreCase("Paper") && computerMove.equalsIgnoreCase("Rock")
 				|| userMove.equalsIgnoreCase("Scissors") && computerMove.equalsIgnoreCase("Paper")) {
 			r = "You Win! Congratulations!";
-		} else if (userMove.equalsIgnoreCase(computerMove)) {
-			r = "Draw. Try again";
 		} else if (computerMove.equalsIgnoreCase("Rock") && userMove.equalsIgnoreCase("Scissors")
 				|| computerMove.equalsIgnoreCase("Paper") && userMove.equalsIgnoreCase("Rock")
 				|| computerMove.equalsIgnoreCase("Scissors") && userMove.equalsIgnoreCase("Paper")) {
 			r = "You Lose. Try Again";
+		}
+		else if (userMove.equalsIgnoreCase(computerMove)) {
+			r = "Draw. Try again";
 		}
 
 		return r;
